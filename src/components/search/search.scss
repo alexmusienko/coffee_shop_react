@@ -1,0 +1,20 @@
+.searchForm {
+
+    label {
+        font-size: 14px;
+        font-weight: 400;
+        color: #000;
+        margin-right: 19px;
+    }
+
+    input {
+        width: 180px;
+        height: 30px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        border: none;
+        background: #FFF;
+        box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.25);
+        padding: 0 15px;
+    }
+}

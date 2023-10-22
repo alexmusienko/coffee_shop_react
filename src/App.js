@@ -1,23 +1,29 @@
-import Container from './components/container/container';
-import Menu from './components/menu/menu';
-import LogoDivider from './components/logo-divider/logo-divider';
 
 // import logo from './logo.svg';
+import { Component } from 'react';
 import './App.css';
+import AboutUs from './components/about-us/about-us';
+import Footer from './components/footer/footer';
+import Header from './components/header/header';
+import LogoDivider from './components/logo-divider/logo-divider';
+import OurBest from './components/our-best/our-best';
 
+export default class App extends Component {
 
-function App() {
-    return (
-        <Container bgLink={require('./img/main-bg.jpg')} height={640}>
-            <Menu />
-            <div className="title">
-                <h1>Everything You Love About Coffee</h1>
-                <LogoDivider />
-                <p>We makes every day full of energy and taste<br/>Want to try our beans?</p>
-                <button>More</button>
-            </div>
-        </Container>
-    );
+    render() {
+        return (
+            <>
+                <Header bgImg={'/img/main-bg.jpg'} />
+                <AboutUs
+                    height={520}
+                    title={'About Us'}>
+                    <LogoDivider color={'black'} />
+                </AboutUs>
+                <OurBest
+                    bgImg={'/img/ourbest-bg.jpg'}
+                    title={'Our best'} />
+                <Footer />
+            </>
+        );
+    }
 }
-
-export default App;
