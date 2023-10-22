@@ -1,0 +1,32 @@
+menu {
+    width: fit-content;
+
+    li {
+        display: inline;
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFF;
+            transition: font-size 0.5s;
+            &.black {
+                color: #000;
+            }
+
+            &:hover {
+                font-size: 14px;
+            }
+        }
+
+        img {
+            width: 35px;
+            height: 35px;
+            margin-right: -4px;
+            fill: #000;
+        }
+    }
+}
